@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sk8</title>
+    <script src="https://kit.fontawesome.com/172a42e60c.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
@@ -14,55 +15,81 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="col offset-6">
+                <button class="subscribe">SUBSCRIBE</button>
+            </div>
+            <div class="col">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-rss"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </div>
+        <div class="row">
             <div class="col">
                 <a href="#news">
-                    <button>SK8T NEWS</button>
+                    <button class="menuButton">SK8T NEWS</button>
                 </a>
             </div>
             <div class="col">
                 <a href="#skateborders">
-                    <button>SKATEBORDERS</button>
+                    <button class="menuButton">SKATEBORDERS</button>
                 </a>
             </div>
             <div class="col">
                 <a href="#boardDesigns">
-                    <button>BOARD DESIGNS</button>
+                    <button class="menuButton">BOARD DESIGNS</button>
                 </a>
             </div>
             <div class="col">
                 <a href="#contactUs">
-                    <button>CONTACT US</button>
+                    <button class="menuButton">CONTACT US</button>
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <img src="./images/top-image.png" alt="Camera Man">
+                <img class="topImg" src="./images/top-image.png" alt="Camera Man">
                 <img src="./images/peralta-logo.png" alt="Logo">
             </div>
         </div>
         <div id="news" class="row">
-            <div class="col">
-                readmore1
+            <div class="col read">
+                <h3>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h3>
+                <p class="date">October 10, 2013</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla laborum maiores numquam. Consequatur
+                    saepe, placeat ab, quam pariatur veniam, nisi aperiam neque velit laboriosam accusamus distinctio
+                    dolores. Nobis, sint itaque.</p>
+                <button class="readButton">[ READ MORE ]</button>
             </div>
-            <div class="col">
-                readmore2
+            <div class="col read">
+                <h3>Rodney Mullen: Pop and ollie and innoviate! (TED Talk)</h3>
+                <p class="date">March 10, 2013</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus et rem voluptatem consequatur,
+                    quisquam modi veritatis molestiae repellendus inventore nesciunt, magni tempore rerum neque.
+                    Voluptate inventore quibusdam tempore soluta exercitationem!</p>
+                <button class="readButton">[ READ MORE ]</button>
             </div>
-            <div class="col">
-                readmore3
+            <div class="col read">
+                <h3>Ray Barbee Talks 'Ban this'</h3>
+                <p class="date">October 4, 2013</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eius facere beatae quos impedit totam
+                    consequuntur mollitia corporis consequatur soluta eos cupiditate possimus accusamus quisquam nam,
+                    tempore consectetur tempora. Sed!</p>
+                <button class="readButton">[ READ MORE ]</button>
             </div>
         </div>
         <div id="skateborders" class="row">
-            <div class="col">
+            <div class="col people">
                 <img src="./images/sk8er-4.png" alt="LANCE MOUNTAIN">
             </div>
-            <div class="col">
+            <div class="col people">
                 <img src="./images/sk8er-3.png" alt="RODNEY MULLEN">
             </div>
-            <div class="col">
+            <div class="col people">
                 <img src="./images/sk8er-2.png" alt="TOMMY GUERRERO">
             </div>
-            <div class="col">
+            <div class="col people">
                 <img src="./images/sk8er-1.png" alt="STEVE CABALLERO">
             </div>
         </div>
@@ -98,20 +125,35 @@
                 <img src="./images/sk8-1.png" alt="Board Design Ten">
             </div>
         </div>
+        <div class="row contact">
+            <div class="col">
+                <h3>Contact Us for More Information</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam explicabo, doloremque aperiam
+                    consectetur quam optio non voluptatibus quos quae consequatur cupiditate ab? Maxime, nemo iste in
+                    enim aliquam quisquam?</p>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-rss"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+            <div class="col">
+                <div id="contactUs" class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="NAME">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EMAIL">
+                </div>
+                <div class="mb-3">
+                    <label for="MESSAGE" class="form-label">Message</label>
+                    <textarea class="form-control" id="MESSAGE" placeholder="YOUR MESSAGE" rows="3"></textarea>
+                </div>
+                <button class="sub">SUBMIT</button>
+            </div>
+        </div>
     </div>
-    <div id="contactUs" class="mb-3">
-        <label for="name" class="form-label">Email address</label>
-        <input type="text" class="form-control" id="name" placeholder="NAME">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EMAIL">
-    </div>
-    <div class="mb-3">
-        <label for="MESSAGE" class="form-label">Message</label>
-        <textarea class="form-control" id="MESSAGE" placeholder="YOUR MESSAGE" rows="3"></textarea>
-    </div>
-    <button>SUBMIT</button>
+
 </body>
 
 </html>

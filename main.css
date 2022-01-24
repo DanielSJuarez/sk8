@@ -1,3 +1,63 @@
+* { 
+    box-sizing: border-box; 
+    overflow-wrap: break-word; 
+    word-break: break-all;
+}
+
 body{
     background-image: url("./images/bg.jpg");
 }
+
+button{
+    background-color: rgb(165, 54, 52);
+    color: white;
+}
+
+label{
+    display: none;
+}
+
+.people > img{
+    border: solid 5px white;
+}
+
+.topImg{
+    border: solid 10px white;
+    width: 100%;
+}
+
+.menuButton{
+    width: 100%;
+    border: none;
+}
+
+.read{
+    background-color: white;
+}
+
+.contact{
+    background-color: white;
+}
+
+.sub{
+    width: 50%;
+    border: none;
+}
+
+.readButton{
+    border: none;
+    background-color: white;
+    color: rgb(165, 54, 52);
+    font-weight: bold;
+}
+
+.subscribe{
+    border: none;
+    color: white;
+    background: none;
+}
+
+#boardDesigns{
+    background-color: white;
+}
+
