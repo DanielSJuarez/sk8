@@ -26,6 +26,15 @@ label{
 
 .people > img{
     border: solid 5px white;
+    width: 100%;
+    overflow: visible;
+    margin-bottom: 15px;
+}
+
+.people:last-of-type{
+    position: absolute;
+    top: 1373px;
+    width: 52.5%;
 }
 
 .topImg{
@@ -36,14 +45,17 @@ label{
 
 .grid{
     position: absolute;
-    right: 100px;
-    top: 130px;
+    right: 203px;
+    top: 170px;
+    width: 76%;
+    height: 327px;
 }
 
 .logo{
     position: absolute;
-    right: 1050px;
-    top: 250px;
+    right: 1000px;
+    top: 210px;
+    
 }
 
 .read{
@@ -58,10 +70,10 @@ label{
 
 .happen{
     line-height: 30px;
+    margin-top: 10px;
 }
 
 .date{
-    padding-top: 10px;
     font-style: italic;
 }
 
@@ -75,6 +87,7 @@ label{
 
 .contact{
     background-color: white;
+    margin-bottom: 40px;
 }
 
 .sub{
@@ -88,6 +101,7 @@ label{
     background-color: white;
     color: rgb(165, 54, 52);
     font-weight: bold;
+    margin-left: 96px;
 }
 
 .subscribe{
@@ -122,7 +136,62 @@ label{
     font-size: 30px;
 }
 
+.board{
+    transform: rotate(-90deg);
+    height: 300px;
+    text-align: center;
+}
+
+.board > img{
+    margin-top: 40px;
+    margin-bottom:20px; 
+}
+
+.img-text{
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    position: absolute;
+    top: 1150px;
+    margin-left: 130px;
+}
+
+#thirdskater{
+    top: 1350px;
+}
+
+#fourthskater{
+    top: 120px;
+    left: 100px;
+}
+
 #boardDesigns{
     background-color: white; 
     margin:40px 0px 40px 0px;  
+}
+
+.pointer{
+    background-color: rgb(165, 54, 52);
+    color: white;
+    height: 75px;
+    width: 150px;
+    position: absolute;
+    top: 1175px;
+    right: 1530px;
+}
+
+.pointer p{
+    padding: 25px 0px 0px 10px;
+    font-weight: bold;
+    margin-top: 110p;
+}
+
+.triangle{
+    position: absolute;
+    left: 75px;
+    bottom: -8.25px;
+    border-top: solid 54px transparent;
+    border-left: solid 54px transparent;
+    border-right: solid 54px rgb(165, 54, 52);
+    transform: rotate(-45deg);
 }
