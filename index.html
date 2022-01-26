@@ -15,10 +15,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-lg offset-6">
+            <div class="col-md-3 col-lg offset-6">
                 <button class="subscribe">SUBSCRIBE</button>
             </div>
-            <div class="col-md-12 col-lg topIcons">
+            <div class="col-md-3 col-lg topIcons">
                 <i class="fab fa-facebook-square"></i>
                 <i class="fas fa-rss"></i>
                 <i class="fab fa-twitter-square"></i>
@@ -47,14 +47,12 @@
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <img class="topImg" src="./images/new-top-image.jpeg" alt="Camera Man">
-                <img class="grid" src="./images/new-grid.png" alt="grid">
+        <div class="row gx-0">
+            <div id='carousel' class="col">
                 <img class="logo" src="./images/peralta-logo.png" alt="Logo">
             </div>
         </div>
-        <div id="news" class="row">
+        <div id="news" class="row topRead">
             <div class="col-md-12 col-lg read">
                 <section class='content'>
                     <h3>Tony Hawk Foundation <br>Raises Big Money At <br>Celeb Fundraiser</h3>
@@ -96,42 +94,67 @@
             <div class="triangle"></div>
         </div>
         <div id="skateborders" class="row">
-            <div class="col-med-12 col-lg-4 people">
-                <div class="img-text">
-                    <p>LANCE <br>MOUNTAIN</p>
+            <div class="col-md-12 col-lg-8">
+                <div class="row gx-0">
+                <div class="col-md-12 col-lg-6 people">
+                    <div class="img-text">
+                        <p>LANCE <br>MOUNTAIN</p>
+                    </div>
+                    <img src="./images/sk8er-4.png" alt="LANCE MOUNTAIN">
                 </div>
-                <img src="./images/sk8er-4.png" alt="LANCE MOUNTAIN">
-            </div>
-            <div class="col-med-12 col-lg-4 people">
-                <div class="img-text">
-                    <p>RODNEY <br>MULLEN</p>
+                <div class="col-md-12 col-lg-6 people gx-0">
+                    <div class="img-text">
+                        <p>RODNEY <br>MULLEN</p>
+                    </div>
+                    <img src="./images/sk8er-3.png" alt="RODNEY MULLEN">
                 </div>
-                <img src="./images/sk8er-3.png" alt="RODNEY MULLEN">
-            </div>
-            <div class="col-med-12 col-lg-4 people">
-                <div id='thirdskater' class="img-text">
-                    <p>TOMMY <br>GUERRERO</p>
+                <div id='thirdskater' class="col people">
+                    <div class="img-text">
+                        <p>STEVE CABALLERO</p>
+                    </div> 
+                    <img src="./images/new-sk8er-1.jpeg" alt="STEVE CABALLERO">
                 </div>
-                <img src="./images/sk8er-2.png" alt="TOMMY GUERRERO">
             </div>
-            <div class="col-med-12 col-lg-8 people">
-                <div id='fourthskater' class="img-text">
-                    <p>STEVE CABALLERO</p>
+            </div>
+                <div class="col-md-12 col-lg-4">
+                    <div id='fourskater' class="col people">
+                        <div  class="img-text">
+                            <p>TOMMY <br>GUERRERO</p>
+                        </div>
+                        <img src="./images/sk8er-2.png" alt="TOMMY GUERRERO">
+                    </div>
                 </div>
-                <img src="./images/new-sk8er-1.jpeg" alt="STEVE CABALLERO">
-            </div>
+
         </div>
         <div id="boardDesigns" class="row">
-            <div class="col-3 board">
+            <div class="board">
                 <img src="./images/sk8-3.png" alt="Board Design One">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-4.png" alt="Board Design Two">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-5.png" alt="Board Design Three">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-6.png" alt="Board Design Four">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-7.png" alt="Board Design Five">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-8.png" alt="Board Design Six">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-9.png" alt="Board Design Seven">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-10.png" alt="Board Design Eight">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-2.png" alt="Board Design Nine">
+            </div>
+            <div class="board">
                 <img src="./images/sk8-1.png" alt="Board Design Ten">
             </div>
         </div>
@@ -153,7 +176,7 @@
                 </section>
             </div>
             <div class="col-md-12 col-lg sendinfo">
-                <section class='content'>
+                <section id='contForm' class='content'>
                     <div id="contactUs" class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" placeholder="NAME">
@@ -175,4 +198,3 @@
 </body>
 
 </html>
-

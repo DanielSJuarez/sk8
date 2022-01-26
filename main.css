@@ -24,39 +24,52 @@ label{
     height: 50px;
 }
 
+.people{
+    position: relative;
+}
+
 .people > img{
     border: solid 5px white;
     width: 100%;
-    overflow: visible;
     margin-bottom: 15px;
+    min-height: 100%;
 }
 
-.people:last-of-type{
+#thirdskater{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 310px;
+    width: 869px;
+}
+
+.img-text{
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
     position: absolute;
-    top: 1373px;
-    width: 52.5%;
+    left: 30%;
+    top: 30%
+
 }
 
-.topImg{
-    border: solid 10px white;
-    width: 100%;
-    margin-bottom: 60px;
-}
-
-.grid{
+#carousel {
+    background: url("./images/top-image.png") no-repeat  -120px -120px;
+    border: solid 8px #fff;
+    background-size: 150%;
+    position: relative;
+  }
+  
+  #carousel::before {
+    content: url("./images/new-grid.png");
+    opacity: 0.3;
+  }
+  
+  #carousel > .logo {
     position: absolute;
-    right: 203px;
-    top: 170px;
-    width: 76%;
-    height: 327px;
-}
-
-.logo{
-    position: absolute;
-    right: 1000px;
-    top: 210px;
-    
-}
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+  }
 
 .read{
     background-color: white;
@@ -90,10 +103,15 @@ label{
     margin-bottom: 40px;
 }
 
+#contForm{
+    position: relative;
+}
+
 .sub{
-    width: 50%;
+    width: 279px;
     border: none;
-    margin-left: 275px;
+    position: absolute;
+    left: 50%;
 }
 
 .readButton{
@@ -102,6 +120,10 @@ label{
     color: rgb(165, 54, 52);
     font-weight: bold;
     margin-left: 96px;
+}
+
+.topRead{ 
+    margin-top: 30px;
 }
 
 .subscribe{
@@ -137,37 +159,31 @@ label{
 }
 
 .board{
-    transform: rotate(-90deg);
+    text-align: center; 
+    position: relative;
     height: 300px;
-    text-align: center;
+    width: 100px;
+    margin: 10px 20px 10px 0px;  
 }
 
 .board > img{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom:20px; 
-}
-
-.img-text{
-    color: white;
-    font-size: 38px;
-    font-weight: bolder;
     position: absolute;
-    top: 1150px;
-    margin-left: 130px;
-}
-
-#thirdskater{
-    top: 1350px;
-}
-
-#fourthskater{
-    top: 120px;
-    left: 100px;
+    transform: rotate(90deg) translateY(-150%);
+    transform-origin: top left;
+    text-align: center;
 }
 
 #boardDesigns{
     background-color: white; 
     margin:40px 0px 40px 0px;  
+    text-align: center;
+}
+
+#boardDesigns > img{
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .pointer{
@@ -196,3 +212,24 @@ label{
     transform: rotate(-45deg);
 }
 
+@media(max-width: 768px){
+    .pointer{
+        display: none;
+    }
+    .triangle{
+        display: none;
+    }
+
+    .board {
+        height: 100px;
+        width: 300px;
+    }
+
+    .board > img{
+        transform:unset;
+    }
+
+    .sub{
+        left: 25%;
+    }
+}
